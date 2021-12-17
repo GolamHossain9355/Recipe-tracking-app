@@ -19,8 +19,9 @@ header {
 
 h1 {
   text-align: center;
-  padding: 10px;
   font-size: 65px;
+  font-family: Roboto;
+  margin: 40px;
 }
 
 /* typography */
@@ -30,7 +31,7 @@ html {
 }
 
 thead th, tfoot th {
-  font-family: 'Rock Salt';
+  font-family: cursive;
 }
 
 th {
@@ -42,15 +43,15 @@ td {
   letter-spacing: 1px;
   overflow-x:hidden;
   overflow-y:hidden;
-  font-size: 12px;
-  padding: 10px;
-  text-align: center;
+  font-size: 11px;
+  padding: 25px;
 }
 
 /* table */
 
 table {
   table-layout: fixed;
+  text-align: center;
   width: 100%;
   border-collapse: collapse;
   overflow:hidden;
@@ -58,7 +59,7 @@ table {
 }
 
 img {
-  width: 100%;
+  width: 70%;
 }
 
 .content_td p {
@@ -69,8 +70,33 @@ img {
 }
 
 
-
 /* Column Size for thead */
+
+th.ingredients, th.preparation {
+  width: 30%;
+}
+
+tr.listHead {background-color: white;}
+
+tr.tableData:nth-child(odd),tr.tableForm {background-color: #f0e7ba}
 
 
 /* Column size for tbody */
+
+td.ingredients, td.preparation {
+  width: 30%
+}
+
+#ingredients, #preparation {
+  width: 30%;
+  height: 35px
+}
+
+#name, #cuisine, #photo, #actions {
+  width: 50%
+}
+
+tr.tableForm {
+  padding: 0px;
+}
+

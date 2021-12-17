@@ -9,10 +9,10 @@ function RecipeList({ recipes, setRecipes }) {
   //should only display the list with tr td
 
   const createdList = recipes.map((recipe, id) => (
-    <tr key={id}>
+    <tr key={id} class="tableData">
       <td>{recipe.name}</td>
       <td>{recipe.cuisine}</td>
-      <td><img src={recipe.photo}/></td>
+      <td><img src={recipe.photo} alt=""/></td>
       <td>{recipe.ingredients}</td>
       <td>{recipe.preparation}</td>
       <td>
@@ -25,13 +25,13 @@ function RecipeList({ recipes, setRecipes }) {
     <div className="recipe-list">
       <table>
         <thead>
-          <tr>
-            <th>Name</th>
-            <th>Cuisine</th>
-            <th>Photo</th>
-            <th>Ingredients</th>
-            <th>Preparation</th>
-            <th>Actions</th>
+          <tr class="listHead">
+            <th class="name">Name</th>
+            <th class="cuisine">Cuisine</th>
+            <th class="photo">Photo</th>
+            <th class="ingredients">Ingredients</th>
+            <th class="preparation">Preparation</th>
+            <th class="actions">Actions</th>
           </tr>
         </thead>
         <tbody>{createdList}</tbody>

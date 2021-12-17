@@ -43,56 +43,61 @@ function RecipeCreate({ recipes, setRecipes }) {
     <form name="create" onSubmit={submitHandler}>
       <table>
         <tbody>
-          <tr>
-            <td>
+          <tr class="tableForm"> 
+            <td class="name">
               <input
                 id="name"
                 name="name"
                 type="text"
+                placeholder="Name"
                 required={true}
                 onChange={onChangeHandler}
                 value={formData.name}
               />
             </td>
-            <td>
+            <td class="cuisine">
               <input
                 id="cuisine"
                 name="cuisine"
+                placeholder="Cuisine"
                 type="text"
                 required={true}
                 onChange={onChangeHandler}
                 value={formData.cuisine}
               />
             </td>
-            <td>
+            <td class="photo">
               <input
                 id="photo"
                 name="photo"
+                placeholder="URL"
                 type="url"
                 required={true}
                 onChange={onChangeHandler}
                 value={formData.photo}
               />
             </td>
-            <td>
+            <td class="ingredients">
               <textarea
                 id="ingredients"
                 name="ingredients"
+                placeholder="Ingredients"
                 required={true}
                 onChange={onChangeHandler}
                 value={formData.ingredients}
               />
             </td>
-            <td>
+            <td class="preparation">
               <textarea
                 id="preparation"
                 name="preparation"
+                placeholder="Preparation"
                 required={true}
                 onChange={onChangeHandler}
                 value={formData.preparation}
               />
             </td>
-            <td>
+            <td class="create">
               <button type="submit">Create</button>
             </td>
           </tr>
