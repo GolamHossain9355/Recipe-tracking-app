@@ -15,7 +15,7 @@ function App() {
       <header>
         <h1>Delicious Food Recipes</h1>
       </header>
-      <RecipeList recipes={recipes} setRecipes={setRecipes} />
+      <RecipeLi recipes={recipes} setRecipes={setRecipes} />
       <RecipeCreate recipes={recipes} setRecipes={setRecipes} />
     </div>
   );
